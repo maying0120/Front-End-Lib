@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+<style>
+
+.button{
+
+border:none;
+
+width:100px;
+
+height:40px;
+
+background: #0a56bb;
+
+color: #fff;
+
+}
+
+.button:focus{
+
+outline: none;
+
+background-color: #f00283;
+
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+window.onload=function(){
+
+    var Button = document.getElementsByClassName("button");
+
+    for (i = 0; i < Button.length; i++) {
+
+        Button[i].onclick=function(){
+
+            for (i = 0; i < Button.length; i++) {
+
+                Button[i].style.backgroundColor = "";
+
+            }
+
+            this.style.backgroundColor = "#f00283";
+
+        }
+
+    }
+
+}
+
+</script>
+
+
+</head>
+
+<body>
+
+
+<button type="submit", class="button item1">第一个按钮</button>
+
+<button type="submit", class="button item2">第二个按钮</button>
+
+<button type="submit", class="button item3">第三个按钮</button> 
+
+
+</body>
+
+</html>
